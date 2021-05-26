@@ -1,0 +1,258 @@
+@import url('homeAnimation.css');
+
+#top{
+    position:relative;
+    display: block;
+    width:100%;
+    min-height:500px;
+    background-image: url('../../img/home.png');
+    background-size:cover;
+    background-position: bottom center;
+    z-index:10;
+}
+
+#top .container .container-fluid h1,
+#top .container .container-fluid h2{
+    display: block;
+    color:white;
+    position:relative;
+    display:block;
+    text-align: center;
+    margin:auto;
+}
+
+#top h1{
+    opacity: 0;
+    top:200px;
+    font-size:40px;
+    text-shadow: 0px 0px 10px rgba(50,50,50,.5);
+    font-weight: bold;
+}
+
+#top h2{
+    opacity: 0;
+    top:250px;
+    text-shadow: 0px 0px 10px rgba(50,50,50,.5);
+}
+
+#top{
+    overflow: hidden;;
+}
+
+#top #nube1,
+#top #nube2,
+#top #nube3,
+#top #nube4{
+    position:absolute;
+    top:100px;
+    left:0;
+    right:0;
+    max-width:500px;
+    display:block;
+    margin:auto;
+}
+
+#top #nube3,
+#top #nube4{
+    top:170px !important;
+}
+
+
+#body{
+    position:relative;
+    top:-100px;
+    background-image: url('../../img/lineas.png');
+    background-repeat: no-repeat;
+    background-position: 50% 200%;
+    background-size:cover;
+}
+
+#body .target,
+#body .content,
+#blog .target{
+    padding: 50px 50px;
+    background-color:white;
+    position:relative;
+    display:block;
+    margin:auto;
+    max-width: 750px;
+}
+
+#body .target{
+    background-image: url('../../img/lineas.png');
+    background-size:cover;
+    border-bottom: 15px solid var(--bg-yellow);
+    z-index:15;
+}
+
+
+#body .target .text{
+    padding: 25px 25px;
+    background-color:white;
+}
+
+#body .target .text h3{
+    color: var(--bg-yellow);
+    font-weight: bold;
+}
+
+#body .target .text p{
+    text-align: justify;
+    font-weight: bold;
+    color: var(--bg-text-gray);
+    margin-top:25px;
+}
+
+#body .content .row{
+    margin-top:50px;
+}
+
+#body .content h3,
+#body .content h4{
+    color: var(--bg-text-gray);
+    font-weight: bold;
+}
+
+#body .content p{
+    text-align: justify;
+    color: var(--bg-text-gray);
+    font-size:14px;
+}
+
+#body .content .block{
+    display: block;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: var(--bg-light);
+    position:relative;
+    margin:auto;
+}
+
+#body .content .block img{
+    display: block;
+    width: 75px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+#service{
+    top:-150px;
+    position:relative;
+    background-image: url('../../img/home2.png');
+    background-size:cover;
+    background-position: center;
+    min-height:300px;
+    padding: 75px 50px;
+}
+
+#service .gradient{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to bottom, rgba(243, 147, 48,.7) 0%, rgba(221, 135, 44, 0.5) 90%);
+    min-height: 300px;
+}
+
+#service h3{
+    position:relative;
+    color: white;
+    z-index:50;
+    text-transform: uppercase;
+    font-size:40px;
+    font-weight: bold;
+}
+
+#service .row{
+    position:relative;
+}
+
+#service .service{
+    position:relative;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#service .row .icon{
+    color:white;
+    font-size:35px;
+    display: block;
+    margin:auto;
+    text-align: center;
+}
+
+#service .service h4,
+#service .service p{
+    color:white;
+}
+
+#blog .target{
+    top:-200px;
+}
+
+#form{
+    background-color: var(--bg-dark);
+    background-image: url('../../img/lineas.png');
+    background-size:cover;
+    padding: 55px 55px;
+}
+
+#form h3{
+    color:white;
+    font-size:35px;
+}
+
+#form .col{
+    margin-top:25px;
+}
+
+#form input,
+#form textarea{
+    letter-spacing: 20px;
+    text-transform:uppercase;
+    font-size:25px;
+    color: var(--bg-dark);
+    padding: 15px 10px;
+}
+
+#form textarea{
+    min-height:300px;
+}
+
+#form input[type="submit"]{
+    letter-spacing:20px;
+    
+}
+
+
+
+@media only screen and (min-width:768px){
+    #top{
+        min-height:700px;
+    }
+
+    #top h1{
+        font-size:95px;
+    }
+
+    #top h2{
+        font-size:40px;
+    }
+
+    #top #nube1,
+    #top #nube2{
+        max-width: 1200px;
+    }
+
+    #top #nube3,
+    #top #nube4{
+        top:250px !important;
+    }
+}
+

@@ -1,0 +1,103 @@
+
+.cloudAnimationOne{
+    animation: cloudAnimationOne 1s ease-in-out forwards;
+}
+
+.cloudAnimationTwo{
+    animation: cloudAnimationTwo 1s ease-in-out forwards;
+}
+
+.cloudAnimationThird{
+    animation: cloudAnimationThird 1.3s ease-in-out forwards;
+}
+
+.cloudAnimationFour{
+    animation: cloudAnimationFour 1.3s ease-in-out forwards;
+}
+
+.cloudFloatingRight{
+    animation: cloudFloatingRight 30s ease-in-out infinite;
+}
+
+.cloudFloatingLeft{
+    animation: cloudFloatingLeft 30s ease-in-out infinite;
+}
+
+@keyframes cloudFloatingRight{
+    0%{
+        transform: translateX(75%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(75%);
+    }
+}
+
+@keyframes cloudFloatingLeft{
+    0%{
+        transform: translateX(-75%);
+    }
+    50%{
+        transform: translateX(-45%);
+    }
+    100%{
+        transform: translateX(-75%);
+    }
+}
+
+
+@keyframes cloudAnimationOne {
+    from{
+        transform:translateX(0%);
+    }
+    to{
+        transform:translateX(-75%);
+    }
+}
+
+@keyframes cloudAnimationTwo {
+    from{
+        transform:translateX(0%);
+    }
+    to{
+        transform:translateX(75%);
+    }
+}
+
+@keyframes cloudAnimationThird {
+    from{
+        transform:translateX(0%);
+    }
+    to{
+        transform:translateX(-75%);
+    }
+}
+
+@keyframes cloudAnimationFour {
+    from{
+        transform:translateX(0%);
+    }
+    to{
+        transform:translateX(75%);
+    }
+}
+
+
+.showTitle{
+    animation: showTitle 1s 1s ease-in-out forwards;
+}
+
+
+@keyframes showTitle{
+    from{
+        opacity:0;
+        transform: translateY(-20%)
+    }
+    to{
+        opacity:1;
+        transform:translateY(0%)
+    }
+}
+

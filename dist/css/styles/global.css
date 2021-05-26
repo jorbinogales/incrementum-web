@@ -1,0 +1,157 @@
+@import url('./var.css');
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fontsText/Rubik-Regular.ttf");
+  }
+
+h1,h2,h3,h4,h5,p,span,label,small,input,button,a{
+    font-family: "Rubik" !important;
+}
+
+ul{
+    list-style:none;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+}
+
+.btn,
+input[type="submit"]{
+    display: block;
+    width:100%;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.btn-yellow{
+    background-color: var(--bg-yellow);
+    color:white !important;
+    border:5px solid var(--bg-yellow);
+}
+
+.btn-yellow:hover{
+    background-color: var(--bg-dark);
+    transition: all .5s ease-in-out;
+}
+
+.navbar{
+    position:relative;
+    background-color: var(--bg-yellow);
+    padding: 10px 5px 0px 5px !important;
+}
+
+.navbar img{
+    position:absolute;
+    top:0;
+    display:block;
+    max-width:75px;
+}
+
+.navbar .nav-item{
+    border-bottom: 5px solid var(--bg-yellow);
+}
+
+.navbar .nav-item:hover{
+    border-bottom: 5px solid #fff;
+}
+
+.navbar li{
+    margin-right:25px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+.linea{
+    display: block;
+    width:100%;
+    height:5px;
+    margin-top:35px;
+    margin-bottom:35px;
+    background-color: var(--bg-dark);
+}
+
+.form{
+    display:block;
+    background-color: var(--bg-light);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="number"],
+.form textarea{
+    display:block;
+    width:100%;
+    padding: 5px 10px;
+    background-color:inherit;
+    border:none;
+    outline:none;
+}
+
+footer{
+    background-color: var(--bg-black);
+    padding: 50px 50px;
+}
+
+footer img{
+    position:relative;
+    display: block;
+    width:100%;
+    max-width: 600px;
+    margin:auto;
+} 
+
+footer ul.icons{
+    max-width:350px;
+    margin:auto;
+    margin-top:10px;
+}
+
+footer ul.icons li{
+    position:relative;
+    margin:auto;
+}
+
+footer ul.icons li span{
+    display: block;
+    border-radius:50%;
+    position:relative;
+    width:60px;
+    height:60px;
+    background-color: var(--bg-yellow);
+    color:white;
+    text-align:center;
+    font-size:40px;
+    line-height:70px;
+}
+
+footer ul.nav{
+    display:block;
+    border-left: 3px solid var(--bg-text-gray);
+    padding: 15px 40px;
+}
+
+footer ul.nav li a{
+    font-size:25px;
+    color:white;
+    cursor:pointer;
+    margin-top:15px;
+    font-weight: bold;
+}
+
+footer ul.nav li a:hover{
+    color: var(--bg-yellow);
+    transition: all .5s ease-in-out forwards
+}
+
+footer .text-right{
+    color:white;
+    display:block;
+    text-align: right;
+    margin-top:35px;
+    font-size:15px;
+}
+
