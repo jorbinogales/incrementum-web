@@ -37,7 +37,10 @@
                 </div>
             </div>
         </footer>
+        <script src="dist/js/loading.js"></script>
         <script src="dist/js/jquery.min.js"></script>
+        <script src="dist/js/particles/particles.min.js"></script>
+        <script src="dist/js/particles.js"></script>
         <script src="dist/js/<?php echo $page ?>.js"></script>
     </body>
     </html>

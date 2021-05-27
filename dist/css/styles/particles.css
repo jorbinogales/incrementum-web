@@ -1,0 +1,99 @@
+
+/* ---- reset ---- */
+canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  #particles-js .loading-box{
+    display:block;
+    position:absolute;
+    top:35%;
+    left:0;
+    right:0;
+    margin:auto;
+    max-width: 400px;
+    height:77px;
+  }
+
+  #particles-js .loading-box img{
+    display:block;
+    margin:auto;
+    width:100%;
+    position:absolute;
+    z-index: 10;
+  }
+
+  #particles-js .loading-box .bg{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    width:100%;
+    height:100%;
+    background-color: #E1E1E1;
+    z-index: 4;
+  }
+
+  
+  #progress-bar{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    width:0%;
+    height:100%;
+    background-color: var(--bg-yellow);
+    z-index: 5;
+  }
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index:1000;
+    background-color:white;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }

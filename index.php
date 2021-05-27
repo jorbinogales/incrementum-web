@@ -18,7 +18,19 @@
 				require 'pages/home.php';
 				homePage();
 			break;
+			case 'about';
+				require 'pages/about.php';
+				aboutPage();
+			break;
 			default:
+			case 'service';
+				require 'pages/service.php';
+				servicePage();
+			break;
+			case 'faq';
+				require 'pages/faq.php';
+				faqPage();
+			break;
 				require 'pages/home.php';
 				homePage();
 			break;

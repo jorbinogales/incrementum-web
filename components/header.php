@@ -16,7 +16,24 @@
         <link rel="stylesheet" href="dist/css/styles/global.css">
         <!-- HOJA DE ESTILOS DINAMICOS  -->
         <link rel="stylesheet" href="dist/css/styles/<?php echo $page ?>.css">
+        <!-- PARTICLES CON CSS  -->
+        <link rel="stylesheet" href="dist/css/styles/particles.css">
     </head>
     <body>
+    <!-- particles.js container -->
+    <div id="particles-js">
+        <div class="loading-box">
+             <img src="dist/img/loading.png" alt="">
+             <div id="progress-bar"></div>
+             <divc class="bg"></div>
+             <div id="progress"></div>
+        </div>
+    </div>
+
+    <!-- stats - count particles -->
+    <div class="count-particles">
+        
+        <span class="js-count-particles"></span> 
+    </div>
 
 <?php } ?>
