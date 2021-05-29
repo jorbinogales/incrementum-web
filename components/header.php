@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="dist/css/styles/<?php echo $page ?>.css">
         <!-- PARTICLES CON CSS  -->
         <link rel="stylesheet" href="dist/css/styles/particles.css">
+        
     </head>
     <body>
     <!-- particles.js container -->

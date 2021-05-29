@@ -3,7 +3,6 @@
     <?php 
         require 'components/homeService.php';   
         require 'components/homeFeatures.php'; 
-        require 'components/homeForm.php';
     ?>
 
     <section id="top">
@@ -17,7 +16,7 @@
 
                 <h1>INCREMENTUM</h1>
 
-                <h2>..te lleva a la cima</h2>
+                <h2>...te lleva a la cima</h2>
             </div>
         </div>
     </section>
@@ -38,7 +37,7 @@
                     </div>
                 </div>
                 <div class="content">
-                   <h3>NOS DISTINGUIMOS POR</h3>+
+                   <h3>NOS DISTINGUIMOS POR</h3>
                   <?php $i = 0 ?>
                   <?php foreach($features as $feature){?>
                     <div class="row">
@@ -93,35 +92,6 @@
                     <h3>BLOG</h3>
                     <span class="linea"></span>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="form">
-        <div class="container">
-            <div class="container-fluid">
-                <h3>CONTACTÁNOS</h3>
-                <form id="formContact" method="post">
-                    <div class="row">
-                        <?php foreach($inputs as $input){ ?>
-                            <div class="col-12 col-md-4 col">
-                                <label class="form" for="<?php echo $input['id'] ?>">
-                                    <input type="<?php echo $input['type'] ?>"
-                                           placeholder="<?php echo $input['placeholder']?>"  
-                                           id="<?php echo $input['id'] ?>">
-                                </label>
-                            </div>
-                        <?php } ?>
-                        <div class="col col-12 col-md-8">
-                            <label class="form" for="textForm">
-                                <textarea id="textForm" placeholder="CONSULTA"></textarea>
-                            </label>
-                        </div>
-                        <div class="col col-12 col-md-4">
-                            <input type="submit" class="btn btn-yellow" value="ENVIAR">
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </section>

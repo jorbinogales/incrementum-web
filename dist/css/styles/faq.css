@@ -1,0 +1,83 @@
+#top{
+    background-image: url('../../img/faq.png');
+    background-position: 100% 0%;
+}
+
+
+#top h3{
+    position:relative;
+    display:block;
+    text-align:right;
+    color:white;
+    margin-top:220px;
+    font-size:35px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#top h3 span{
+    padding: 10px 0px;
+    border-bottom:3px solid var(--bg-yellow);
+}
+
+
+#body{
+    position:relative;
+    top:-100px;
+    background-image: url('../../img/lineas.png');
+    background-repeat: no-repeat;
+    background-position: 50% 200%;
+    background-size:cover;
+    position:relative;
+    top:-100px;
+}
+
+#body .content{
+    position:relative;
+    padding: 50px 50px;
+    background-color:white;
+    display:block;
+    margin:auto;
+    max-width: 1000px;
+    z-index: 10;
+}
+
+
+#body .content h3{
+    color: var(--bg-yellow);
+    font-weight: bold;
+    font-size:40px;
+}
+
+.circle{
+    width:30px;
+    height:30px;
+    font-size:22px;
+    color:white;
+    text-align:center;
+}
+
+.faq{
+    display: block;
+    padding-left:50px;
+}
+
+
+.faq .item-list{
+    color:var(--bg-dark);
+    padding-left: 30px;
+}
+
+
+.faq h4{
+    color:var(--bg-dark);
+    font-weight: bolder;
+    font-size:18px;
+}
+
+.faq p{
+    color:var(--bg-dark);
+    font-size:13px;
+}
+
+

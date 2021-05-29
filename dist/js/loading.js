@@ -25,10 +25,9 @@
         }
 
         function doneLoading(){
-            particle.style.opacity = 0;
             setTimeout(function(){ 
-                particle.style.display = "none";
-            }, 1200);
+                $('#particles-js').fadeOut();
+            }, 1000);
         }
 
         for(var i=0; i<tot; i++) {

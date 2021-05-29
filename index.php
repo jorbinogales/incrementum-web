@@ -1,5 +1,6 @@
 <?php
 	require 'components/components.php';
+	require 'components/footerForm.php';
 	
 	$page = 'home';
 	if(isset($_GET['page'])){

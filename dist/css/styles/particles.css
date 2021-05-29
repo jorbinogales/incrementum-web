@@ -25,19 +25,6 @@ canvas {
     z-index: 10;
   }
 
-  #particles-js .loading-box .bg{
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    display:block;
-    width:100%;
-    height:100%;
-    background-color: #E1E1E1;
-    z-index: 4;
-  }
-
   
   #progress-bar{
     position: absolute;
@@ -50,6 +37,7 @@ canvas {
     height:100%;
     background-color: var(--bg-yellow);
     z-index: 5;
+    transition: all .5s ease-in-out;
   }
   #particles-js {
     position: fixed;

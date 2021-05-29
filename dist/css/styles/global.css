@@ -13,6 +13,32 @@ ul{
     list-style:none;
 }
 
+header{
+    display: block;
+    width:100%;
+}
+
+.showHeaderScroll{
+    position:fixed;
+    top:0;
+    left:0;
+    opacity: 0;
+    transform:translateY(-100%);
+    animation: showHeaderScroll 1s ease-in-out forwards;
+    z-index: 1000;
+}
+
+@keyframes showHeaderScroll{
+    from{
+        transform:translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0%);
+        opacity: 1;
+    }
+}
+
 #top{
     position:relative;
     display: block;
@@ -77,6 +103,19 @@ input[type="submit"]{
     transition: all .5s ease-in-out;
 }
 
+.btn-white{
+    background-color: white;
+    color:var(--bg-dark) !important;
+    border:5px solid white;
+}
+
+.btn-white:hover{
+    background-color: var(--bg-yellow);
+    transition: all .5s ease-in-out;
+    border:5px solid var(--bg-yellow);
+    color:white !important;
+}
+
 .navbar{
     position:relative;
     background-color: var(--bg-yellow);
@@ -131,6 +170,82 @@ input[type="submit"]{
     outline:none;
 }
 
+.footer-line{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--bg-yellow);
+}
+
+.footer-line .row{
+    width:80%;
+    max-width: 600px;
+    margin:auto;
+}
+
+.footer-line .row .email,
+.footer-line .row .phone{
+    color:white;
+    display: block;
+    margin:auto;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rubik';
+    padding:0px 15px;
+}
+
+.footer-line .row .phone{
+    border-left: 2px solid white;
+    text-align: left;
+    
+}
+
+.footer-line .row i{
+    position:relative;
+    top:5px;
+    padding: 0px 10px;
+}
+
+#form{
+    background-color: var(--bg-dark);
+    background-image: url('../../img/lineas.png');
+    background-size:cover;
+    padding: 55px 55px;
+}
+
+#form .container{
+    max-width:900px;
+}
+
+#form h3{
+    color:white;
+    font-size:35px;
+}
+
+#form .col{
+    margin-top:25px;
+}
+
+#form input,
+#form textarea{
+    letter-spacing: 10px;
+    text-transform:uppercase;
+    font-size: 12px;
+    color: var(--bg-dark);
+    padding: 8px 7px;
+}
+
+#form textarea{
+    min-height:300px;
+}
+
+#form input[type="submit"]{
+    letter-spacing:10px;
+    
+}
+
+
+
 footer{
     background-color: var(--bg-black);
     padding: 50px 50px;
@@ -170,7 +285,7 @@ footer ul.icons li span{
 
 footer ul.nav{
     display:block;
-    border-left: 3px solid var(--bg-text-gray);
+    border-left: 2px solid var(--bg-text-gray);
     padding: 15px 40px;
 }
 
@@ -193,6 +308,139 @@ footer .text-right{
     text-align: right;
     margin-top:35px;
     font-size:15px;
+}
+
+.modal-incrementum{
+    display: block;
+    max-width: 800px;
+}
+
+.modal-incrementum .modal-body button{
+    position:relative;
+    max-width:150px;
+    margin: 0px !important;
+    float: right;
+}
+
+.modal-incrementum .modal-body .header{
+    position:relative;
+    display:block;
+    margin:auto;
+    min-height:100px;
+    width:100%;
+}
+
+.modal-incrementum .modal-body .line{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    display: block;
+    background-color: var(--bg-light);
+    width: 90%;
+    height:2px;
+}
+
+.modal-incrementum .modal-body > h4,
+.modal-incrementum .modal-body > p{
+    display: block;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    font-size:22px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.modal-incrementum .modal-body > h4{
+    margin-top:25px;
+}
+
+.modal-incrementum .modal-body > p{
+    margin-bottom:25px;
+}
+
+.modal-incrementum .modal-body button span{
+    position:relative;
+    top:5px;
+    font-size:20px !important;
+}
+
+
+
+
+.modal-incrementum .modal-body h4,
+.modal-incrementum .modal-body p{
+    color: var(--bg-dark);
+}
+
+.modal-incrementum .modal-footer{
+    padding:0px;
+    margin:0px !important;
+}
+
+.modal-incrementum .modal-footer button{
+    margin:0px !important;
+    border-radius: 0px !important;
+}
+
+.modal-incrementum .body{
+    position:relative;
+    display: block;
+    width: 80%;
+    margin:auto;
+}
+
+.modal-incrementum .header-team{
+    background-color: var(--bg-dark);
+    min-height: 200px;
+}
+
+.modal-incrementum .member img{
+   display: block;
+   margin: auto;
+   position: relative;
+   top:-125px;
+   background:white;
+   border-radius: 50%;
+}
+
+.modal-incrementum .member h4{
+    border-bottom:2px solid var(--bg-dark);
+    max-width: 300px;
+    margin: auto;
+    font-size:15px;
+}
+
+.modal-incrementum .member h4,
+.modal-incrementum .member p{
+    text-align: center;
+    font-size:25px;
+ }
+
+
+.modal-incrementum .body li p{
+    margin-left:25px;
+}
+
+.circle{
+    position:absolute;
+    left:0;
+    top:5px;
+    bottom:0;
+    display:block;
+    height: 15px;
+    width: 15px;
+    background: var(--bg-yellow);
+    border-radius:50%;
+}
+
+.circle-gray{
+    background-color: var(--bg-light);
+    width:15px !important;
+    height:15px !important;
 }
 
 @media only screen and (min-width:768px){

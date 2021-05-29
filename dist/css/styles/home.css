@@ -187,39 +187,6 @@
     top:-200px;
 }
 
-#form{
-    background-color: var(--bg-dark);
-    background-image: url('../../img/lineas.png');
-    background-size:cover;
-    padding: 55px 55px;
-}
-
-#form h3{
-    color:white;
-    font-size:35px;
-}
-
-#form .col{
-    margin-top:25px;
-}
-
-#form input,
-#form textarea{
-    letter-spacing: 20px;
-    text-transform:uppercase;
-    font-size:25px;
-    color: var(--bg-dark);
-    padding: 15px 10px;
-}
-
-#form textarea{
-    min-height:300px;
-}
-
-#form input[type="submit"]{
-    letter-spacing:20px;
-    
-}
 
 
 

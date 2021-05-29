@@ -46,7 +46,7 @@
     z-index: 10;
 }
 
-#body .content span{
+.icon-service{
     display:block;
     position:relative;
     background-color: var(--bg-yellow);
@@ -57,7 +57,7 @@
     margin-top:35px;
 }
 
-#body .content span img{
+.icon-service img{
     position:absolute;
     top:0;
     bottom: 0;
@@ -74,6 +74,7 @@
     min-height:300px;
     margin-top:15px;
     margin-bottom:15px;
+    cursor:pointer;
 }
 
 #body .content .service:hover{
@@ -98,3 +99,4 @@
     font-weight: bold;
     font-size: 12px;
 }
+
