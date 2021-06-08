@@ -1,0 +1,12 @@
+<?php
+if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
+echo json_encode(array('POST' => $_POST));
+ }
+?>[02-Jun-2021 15:41:45 America/Santiago] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/incremen/public_html/php/email.php on line 10
+[02-Jun-2021 15:42:09 America/Santiago] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/incremen/public_html/php/email.php on line 9
+[02-Jun-2021 15:42:09 America/Santiago] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.') in /home/incremen/public_html/php/email.php on line 9
+[02-Jun-2021 16:01:10 America/Santiago] PHP Parse error:  syntax error, unexpected '$mail' (T_VARIABLE) in /home/incremen/public_html/php/email.php on line 20
+[02-Jun-2021 16:28:18 America/Santiago] PHP Notice:  Undefined index: emailform in /home/incremen/public_html/php/email.php on line 41
+[02-Jun-2021 17:05:46 America/Santiago] PHP Notice:  Undefined index: nameForm in /home/incremen/public_html/php/email.php on line 25
+[02-Jun-2021 17:06:26 America/Santiago] PHP Notice:  Undefined index: nameForm in /home/incremen/public_html/php/email.php on line 25
+[02-Jun-2021 17:09:25 America/Santiago] PHP Notice:  Undefined index: nameForm in /home/incremen/public_html/php/email.php on line 25
