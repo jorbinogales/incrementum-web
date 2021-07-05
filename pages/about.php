@@ -8,11 +8,9 @@ function aboutPage(){
             <div class="container">
                 <div class="container-fluid position-relative">
                     <div class="text">
-                        <h3><span>te llevamos al siguiente nivel</span></h3>
+                        <h3><span>Te llevamos al siguiente nivel</span></h3>
                     </div>
                 </div>
-                <img src="dist/img/arbusto2.png" id="arbusto1">
-                <img src="dist/img/arbusto2.png" id="arbusto2">
             </div>
         </section>
         <section id="body">
@@ -23,26 +21,28 @@ function aboutPage(){
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <p>
-                                    <b>Incrementum Advisors</b> es una firma peruana de asesoría financiera que
-                                     realiza actividades de banca e inversión con aliados del sistema 
-                                    financiero local e internacional para empresas y personas naturales. <br><br> 
+                                    Somos una firma peruana de asesoría financiera que realiza actividades 
+                                    de banca inversión con aliados del sistema financiero local e internacional,
+                                    empresas locales y personas naturales con un solo foco de atención: su crecimiento.<br><br>
 
-                                    Nuestro objetivo es impulsar el crecimiento financiero de pequeñas y grandes empresas, 
-                                    enfocándonos en la búsqueda de oportunidades comerciales, ofreciendo los mejores 
-                                    programas de financiamiento, asesoría comercial y la maximización de ingresos 
-                                    con  la intención de lograr beneficios significativos para nuestros clientes e inversionistas. <br><br>
 
-                                    Nuestros socios y aliados estratégicos locales e internacionales cuentan con amplia experiencia
-                                    en el ámbito financiero, legal y en el mercado de capitales, gozando además de un reconocido
-                                    prestigio profesional y ético.<br><br>
+                                    Nuestro objetivo es impulsar el crecimiento financiero de nuestros clientes, 
+                                    enfocándonos en la búsqueda de nuevas oportunidades comerciales, obteniendo para ellos, 
+                                    los mejores programas de financiamiento, asesoría comercial y la maximización de ingresos
+                                    con la ntención de lograr beneficios significativos para nuestros clientes e inversionistas.<br><br>
 
-                                    Las soluciones que proponemos en Incrementum se adaptan a las necesidades
-                                    específicas del cliente, enfocándonos en lograr el máximo valor, rentabilidad y flexibilidad.<br><br>
+                                    Nuestros socios y aliados estratégicos locales e internacionales cuentan con 
+                                    amplia experiencia en el ámbito financiero, legal y mercado de capitales, gozando
+                                    además de un reconocido prestigio.<br><br>
 
+                                    Las soluciones que proponemos a nuestros clientes, 
+                                    se adaptan a sus necesidades, lo nuestro es enfocarnos 
+                                    en lograr el máximo valor, la mejor rentabilidad y flexibilidad
+                                     en cada una de las soluciones.<br><br>
                                     </p>
                                 </div>
                                 <div class="d-none d-md-block col-0 col-md-6">
-                                    <img src="dist/img/about2.png">
+                                    <img src="dist/img/nosotros-incrementum-advisors2.png">
                                 </div>
                             </div>
                         </div>
@@ -120,21 +120,58 @@ function aboutPage(){
                 <div class="container-fluid">
                     <h3>NUESTRO EQUIPO</h3>
                     <div class="row">
+                        <div class="col-0 col-lg-3"></div>
                         <?php $i = 1; ?>
                         <?php 
                             foreach ($teams as $team) {
-                                ?>
+
+                                if($i == 2 || $i == 3){
+                        ?>
                                     <div class="col-12 col-md-6 col-lg-3">
                                         <div 
                                             class="team"
                                             id="team-<?php echo $i ?>" 
                                             data-toggle="modal" 
                                             data-target="#modal-team-<?php echo $i ?>">
-                                            <img src="dist/img/team<?php echo $i ?>.png" alt="">
+                                            <img src="dist/img/incrementum-advisors-team<?php echo $i ?>.png" alt="nosotros-incrementum-advisors-team">
                                             <h4><?php echo $team['name'] ?></h4>
                                             <p><?php echo $team['position'] ?></p>
                                         </div>
                                     </div>
+
+                                <?php } ?>
+                         <?php
+                            $i++;
+                         }
+                         ?>
+                         <div class="col-0 col-lg-3"></div>
+                    </div>
+
+                    <div class="row">
+                        
+                        <?php $i = 1; ?>
+                        <?php 
+                            foreach ($teams as $team) {
+
+                                if($i != 2 && $i != 3){
+                        ?>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div 
+                                            class="team"
+                                            id="team-<?php echo $i ?>" 
+                                            data-toggle="modal" 
+                                            data-target="#modal-team-<?php echo $i ?>">
+                                            <img src="dist/img/incrementum-advisors-team<?php echo $i ?>.png" alt="nosotros-incrementum-advisors-team">
+                                            <h4><?php echo $team['name'] ?></h4>
+                                            <p><?php echo $team['position'] ?></p>
+                                        </div>
+                                    </div>
+
+                                <?php } else { ?>
+
+                                    <div class="col-0 col-lg-3"></div>
+
+                                <?php } ?>
                          <?php
                             $i++;
                          }
@@ -167,18 +204,23 @@ function aboutPage(){
                                 CERRAR <span class="icon icon-x"></span>
                                 </button>
                                 <div class="header-team">
+                                    <img src="dist/img/incrementum-advisors-team<?php echo $i ?>.png" alt="incrementum-advisors-nosotros">
                                 </div>
                                 <div class="member">
-                                    <img src="dist/img/team<?php echo $i ?>.png" alt="">
+                                    <ul class="d-flex icons">
+                                        <li>
+                                            <a href="<?php echo $team['linkedin'] ?>"><span class="icon-linkedin"></span></a>
+                                        </li>
+                                    </ul>
                                     <h4><?php echo $team['name'] ?></h4>
                                     <p><?php echo $team['position'] ?></p>
                                  </div>
                                 <div class="body">
-                                    <ul class="w-80 m-auto">
+                                    <ul class="w-95 m-auto">
                                         <?php 
                                             for($j = 0; $j<count($team['skills']); $j++){
                                                 ?>
-                                                <li class="position-relative w-100">
+                                                <li class="position-relative w-100 p-0 m-0">
                                                     <span class="circle"></span>
                                                     <p class="ml-20"><?php echo $team['skills'][$j] ?></p>
                                                 </li>

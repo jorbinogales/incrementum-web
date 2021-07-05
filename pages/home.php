@@ -8,15 +8,16 @@
     <section id="top">
         <div class="container">
             <div class="container-fluid position-relative">
-                <img src="dist/img/nubes1.png" id="nube1">
-                <img src="dist/img/nubes2.png" id="nube2">
+                <img src="dist/img/incrementum-te-llevamos-a-la-sima-nubes.png" id="nube" alt="te-llevamos-a-la-sima-incrementum">
+                <img src="dist/img/incrementum-te-llevamos-a-la-sima-nubes1.png" id="nube1" alt="incremetum-te-llevamos-a-la-sima">
+                <img src="dist/img/incrementum-te-llevamos-a-la-sima-nubes2.png" id="nube2" alt="incrementum-advisors-nubes">
                 
-                <img src="dist/img/nubes2.png" id="nube3">
-                <img src="dist/img/nubes1.png" id="nube4">
+                <img src="dist/img/incrementum-te-llevamos-a-la-sima-nubes2.png" id="nube3" alt="nubes-incrementum">
+                <img src="dist/img/incrementum-te-llevamos-a-la-sima-nubes1.png" id="nube4" alt="incrementum_advisors">
 
-                <h1>INCREMENTUM</h1>
+                <h2><img src='dist/img/incrementum-advisors-logo-isoTipoColor.png' id='logo' alt="incrementum-advisors-logo-isotipo"></h2>
 
-                <h2>...te lleva a la cima</h2>
+                <h2><b>Te lleva a la cima</b></h2>
             </div>
         </div>
     </section>
@@ -26,11 +27,12 @@
             <div class="container-fluid">
                 <div class="target">
                     <div class="text">
+                        <h1>Incrementum Advisors</h1>
                         <h3>¿POR QUÉ INCREMENTUM?</h3>
                         <p>
                         Sabemos que el mundo está en constante cambio, que las finanzas 
                         y la economía pueden llegar a ser vulnerables si no contamos con
-                        un plan sólido; por ello desde Incrementum acompaños tus 
+                        un plan sólido; por ello desde Incrementum acompañamos tus 
                         finanzas, creamos planes que se  adaptan a tus necesidades
                         y asesoramos tu presente para transformar tu futuro
                         </p>
@@ -43,7 +45,8 @@
                     <div class="row">
                         <div class="col-12 col-md-3">
                             <div class="block">
-                                <img src="dist/img/iconhome<?php echo $i+1 ?>.png" alt="">
+                                <img src="dist/img/incrementum-advisors-iconhome<?php echo $i+1 ?>.png" 
+                                     alt="incrementum_advisors_icon">
                             </div>
                         </div>
                         <div class="col-12 col-md-9">
@@ -89,7 +92,33 @@
         <div class="container">
             <div class="container-fluid">
                 <div class="target">
-                    <h3>BLOG</h3>
+                    <h3><a href="https://blog.incrementum.pe">BLOG</a></h3>
+                    <div class="row">
+                    <?php 
+
+                    require 'php/connect.php';
+                       
+                    define("MYSQL_CONN_ERROR", "Unable to connect to database.");
+
+                    mysqli_report(MYSQLI_REPORT_STRICT);
+
+                    try {
+
+                        $usr = 'incremen_wp122';
+                        $pw = 'Sumagro01$$';
+                        $db = 'incremen_wp122';
+                        $host = 'localhost';
+
+                        connect($usr, $pw, $db, $host);
+
+                    } catch (Exception $e){
+
+                        echo $e->errorMessage();
+
+                    } 
+                    
+                     ?>
+                    </div>
                     <span class="linea"></span>
                 </div>
             </div>

@@ -6,7 +6,7 @@
             ),
             1 => array(
                 'title' => 'FLEXIBILIDAD',
-                'description' => 'En medio de una economía dinámica, cambiante y competitiva, nos adaptarnos a los requisitos y la las necesidades de nuestros grupos de interés.',
+                'description' => 'En medio de una economía dinámica, cambiante y competitiva, nos adaptamos a los requisitos y las necesidades de nuestros grupos de interés.',
             ),
             2 => array(
                 'title' => 'INTEGRIDAD',

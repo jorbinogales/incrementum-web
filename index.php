@@ -26,7 +26,7 @@
 			default:
 			case 'service';
 				require 'pages/service.php';
-				servicePage();
+				servicePage($inputs);
 			break;
 			case 'faq';
 				require 'pages/faq.php';
@@ -37,5 +37,32 @@
 			break;
 		}
 	}
-	echo footerPHP($page, $navs);
+	echo footerPHP($page, $navs, $inputs);
 ?>
+<!-- Modal -->
+<button
+    id="btnSuccess"
+    data-toggle="modal" 
+    data-target="#successEmail"
+    style="display:none;">
+</button>
+
+<div class="modal fade" 
+     id="successEmail"
+     tabindex="0" 
+     role="dialog" 
+     aria-labelledby="successEmail" 
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4>Email enviado correctamente</h4>
+                    <img src="dist/img/isoTipoColor.png" style="width:100%">
+                    <p>Su correo electronico ha sido enviado exitosamente, pronto un miembro del equipo se comunicara contigo</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+    </div>
+</div>

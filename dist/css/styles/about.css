@@ -1,5 +1,5 @@
 #top{
-    background-image: url('../../img/about.png');
+    background-image: url('../../img/nosotros-incrementum-advisors.png');
     background-position: 100% 0%;
 }
 
@@ -10,9 +10,12 @@
     text-align:right;
     color:white;
     margin-top:220px;
-    font-size:35px;
+    font-size:22px;
     font-weight: bold;
+    width: 100%;
 }
+
+
 
 #top h3 span{
     padding: 10px 0px;
@@ -40,7 +43,7 @@
 #body{
     position:relative;
     top:-100px;
-    background-image: url('../../img/lineas.png');
+    background-image: url('../../img/incrementum-negocios-lineas.png');
     background-repeat: no-repeat;
     background-position: 50% 200%;
     background-size:cover;
@@ -136,7 +139,6 @@
 #team .row .team{
     margin-bottom:50px;
     border-bottom: 10px solid var(--bg-yellow);
-    transform:scale(.8);
 }
 
 #team .row .team:hover{
@@ -158,24 +160,32 @@
     position: relative;
     color: white;
     text-align: center;
-    font-weight: bold;
-    font-size:13px;
+    font-size:18px;
     margin-top:20px;
     border-bottom:1px solid white;
     max-width: 300px;
     margin:auto;
-    letter-spacing: 5px;
-    padding: 10px 0px
+    padding: 10px 0px 2px 0px;
 }
-
-
 
 #team .row p{
     color: white;
     text-align: center;
-    font-size:18px;
+    font-size:15px;
+    letter-spacing: 2px;
     margin-top:5px;
+}
+
+#form{
+    background-image: inherit !important;
 }
 
 
 
+
+@media only screen and (min-width:768px){
+    #top h3{
+        width:auto !important;
+        font-size:35px
+    }
+}

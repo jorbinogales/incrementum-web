@@ -14,14 +14,14 @@
         ),
         3 => array(
             'text' => 'BLOG',
-            'page' => 'blog'
+            'page' => 'https://blog.incrementum.pe'
         ),   
         4 => array(
             'text' => 'PREGUNTAS FRECUENTES',
             'page' => 'faq'
         ),
         5 => array(
-            'text' => ' CONTACTANOS',
+            'text' => ' CONTÁCTANOS',
             'page' => 'contact'
         )
     );

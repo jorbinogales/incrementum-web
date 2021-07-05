@@ -24,8 +24,8 @@
                     while($posts = $result->fetch_assoc()) {
                         
                         $postID = $posts['ID'];
-                        
-                        $sqlAttachment = "SELECT * FROM wpeu_posts WHERE post_parent = '$postID' AND post_type = 'attachment'";
+                    
+                        $sqlAttachment = "SELECT * FROM wpeu_posts WHERE post_parent = '$postID' AND post_type = 'attachment' ORDER BY ID DESC";
                         
                         $resultAttachment = $conexion->query($sqlAttachment);
                         
@@ -35,7 +35,8 @@
                                 
                                 $attachmentID = $attachment['ID'];
                                 
-                                $sqlVariant = "SELECT * FROM wpeu_postmeta WHERE post_id = '$attachmentID' and meta_key = '_wp_attached_file'";
+                                
+                                $sqlVariant = "SELECT * FROM wpeu_postmeta WHERE post_id = '$attachmentID' and meta_key = '_wp_attached_file' ORDER BY meta_id DESC";
                             
                                 $resultVariant = $conexion->query($sqlVariant);
                                 
@@ -43,14 +44,14 @@
                             
                                     $variant = $resultVariant->fetch_assoc();
                                     
+                                    
                                     ?>
                                         <div class="col-12 col-md-6">
                                             <a  class="blog-content" 
                                                 href="https://blog.incrementum.pe/<?php echo $posts['post_name'] ?>"
                                                 style="background-image: url('https://blog.incrementum.pe/wp-content/uploads/<?php echo $variant['meta_value'] ?>')">
                                                 <div class="background-gradient"></div>
-                                                <h4><?php echo mb_substr($posts['post_title'], 0, 40); ?></h4>
-                                                
+                                                <h4><?php echo $posts['post_title']; ?></h4>    
                                             </a>
                                         </div>
                                     

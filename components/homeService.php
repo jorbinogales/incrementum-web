@@ -13,7 +13,8 @@
                     1 => 'Realización de estudios para compra o venta de empresas en Perú o mercados internaciones.',
                     2 => 'Búsqueda de socios estratégicos que garanticen un proceso de venta o compra exitoso.',
                     3 => 'Elaboración de teaser y/o memorando de venta.',
-                )
+                ),
+                'mailing' => 'fusiones',
             ),
             1 => array(
                 'title' => 'FINANCIAMIENTOS',
@@ -28,7 +29,8 @@
                             1 => 'Acompañamiento en renegociación de condiciones con financiadores actuales.',
                             2 => 'Elaboración de teaser de presentación a entidades financieras locales einternacionales.',
                             3 => 'Asesoramiento en la obtención de nuevos financiamientos.',
-                        )
+                ),
+                'mailing' => 'financiamiento',
                 
             ),
             2 => array(
@@ -45,7 +47,8 @@
                             2 => 'Elaboración de prospecto de emisión.',
                             3 => 'Asesoría y gestión con los fondos de inversión ',
                             4 => 'Elaboración de propuesta y conformación de flujos. '
-                        )
+                ),
+                'mailing' => 'deudas',
             ),
             3 => array(
                 'title' => 'GARANTÍAS<br> BANCARIAS',
@@ -56,7 +59,8 @@
                                 0 => 'Asesoramiento en la obtención de garantías bancarias de fiel cumplimiento, seriedad de oferta financieras y comerciales.',
                                 1 => 'Negociación de tarifas de garantía.',
                                 2 => 'Seguimiento post emisión.',
-                            )
+                ),
+                'mailing' => 'bancarias',
             ),
             4 => array(
                 'title' => 'PRODUCTOS<br> FIDUCIARIOS',
@@ -71,7 +75,8 @@
                                 1 => 'Elaboración de contrato fiduciario.',
                                 2 => 'Acompañamiento en selección de compañía fiduciaria y negociación de tarifas.',
                                 3 => 'Negociación con posibles fideicomisarios para obtener mejores condiciones.',
-                            )
+                ),
+                'mailing' => 'productos',
             ),
             5 => array(
                 'title' => 'VALORIZACIÓN<br> DE EMPRESAS',
@@ -84,7 +89,8 @@
                 'list' => array(
                                 0 => 'Valorización de negocios en marcha bajo diversas metodologías.',
                                 1 => 'Valorización de marcas.',
-                            )
+                ),
+                'mailing' => 'valorizacion',
             ),
             6 => array(
                 'title' => 'ASESORAMIENTOS',
@@ -100,7 +106,8 @@
                                       gasto de energía dentro del mismo recibo a ser girado.',
                                 2 => 'Eficiencia energética.',
                                 3 => 'Rentabilidad económica.'
-              )
+                ),
+                'mailing' => 'energetica',
             ),
             7 => array(
                 'title' => 'CONSULTORÍAS<br> ESPECIALIZADAS',
@@ -108,6 +115,7 @@
                 'parrafo' => 'Ayudamos a las empresas a enfrentar retos y mejorar sus capacidades productivas a través de una
                               asesoría personalizada y herramientas para implementar mejores prácticas comerciales  y financieras para tener
                               un crecimiento inteligente y lograr un éxito continuo..',
+                'mailing' => 'especializada',
             ),
             8 => array(
                 'title' => 'SISTEMAS DE RIESGOS',
@@ -120,6 +128,7 @@
                               por la ley de Prevención de Lavado de Activos, Financiamiento del Terrorismo y otros Delitos.<br><br>
                 
                              Aplica para todas las jurisdicciones de Perú.<br><br> ',
+                'mailing' => 'riesgos',
             ),
             9 => array(
                 'title' => 'CONSULTORÍA',
@@ -142,7 +151,8 @@
                                 8 => 'Diseño de branding corporativo.',
                                 9 => 'Campañas de marketing digital.',
                                 10 => 'Desarrollo de plataformas digitales de ventas,  web, ecommerce y marketplace.'
-              )
+                ),
+                'mailing' => 'marketing',
             ),
         );
 ?>

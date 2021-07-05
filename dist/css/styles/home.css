@@ -1,14 +1,15 @@
 @import url('homeAnimation.css');
 
 #top{
-    background-image: url('../../img/home.png');
-    background-position: bottom center;
+    background-image: url('../../img/incrementum-advisors-home.png');
+    background-position: 0px 0px;
+    background-size: cover;
 }
 
 #top .container .container-fluid h1,
 #top .container .container-fluid h2{
     display: block;
-    color:white;
+    color:#4C4A60;
     position:relative;
     display:block;
     text-align: center;
@@ -18,22 +19,25 @@
 #top h1{
     opacity: 0;
     top:200px;
-    font-size:40px;
-    text-shadow: 0px 0px 10px rgba(50,50,50,.5);
-    font-weight: bold;
 }
 
 #top h2{
     opacity: 0;
-    top:250px;
-    text-shadow: 0px 0px 10px rgba(50,50,50,.5);
+    top:200px;
+}
+
+
+#top #logo{
+    width: 100%; 
+    max-width:300px;
 }
 
 
 #top #nube1,
 #top #nube2,
 #top #nube3,
-#top #nube4{
+#top #nube4,
+#top #nube{
     position:absolute;
     top:100px;
     left:0;
@@ -41,6 +45,11 @@
     max-width:500px;
     display:block;
     margin:auto;
+}
+
+#top #nube{
+    max-width: 70% !important;
+    top:50px !important;
 }
 
 #top #nube3,
@@ -52,7 +61,7 @@
 #body{
     position:relative;
     top:-100px;
-    background-image: url('../../img/lineas.png');
+    background-image: url('../../img/incrementum-negocios-lineas.png');
     background-repeat: no-repeat;
     background-position: 50% 200%;
     background-size:cover;
@@ -70,7 +79,6 @@
 }
 
 #body .target{
-    background-image: url('../../img/lineas.png');
     background-size:cover;
     border-bottom: 15px solid var(--bg-yellow);
     z-index:15;
@@ -82,9 +90,18 @@
     background-color:white;
 }
 
+#body .target .text h1{
+    color: var(--bg-text-gray);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom:25px;
+}
+
 #body .target .text h3{
     color: var(--bg-yellow);
     font-weight: bold;
+    text-align: center;
 }
 
 #body .target .text p{
@@ -98,16 +115,31 @@
     margin-top:50px;
 }
 
+
+
+
 #body .content h3,
-#body .content h4{
+#body .content h4,
+#blog .container h3{
     color: var(--bg-text-gray);
+    font-weight: bold;
+    text-align:center;
+}
+
+#blog .container h3 a{
+    color: var(--bg-text-gray) !important;
     font-weight: bold;
 }
 
+#body .content h4{
+    margin-top:50px;
+}
+
 #body .content p{
-    text-align: justify;
+    text-align: center;
     color: var(--bg-text-gray);
     font-size:14px;
+    margin-top:15px;
 }
 
 #body .content .block{
@@ -134,7 +166,7 @@
 #service{
     top:-150px;
     position:relative;
-    background-image: url('../../img/home2.png');
+    background-image: url('../../img/incrementum-advisors-home2.png');
     background-size:cover;
     background-position: center;
     min-height:300px;
@@ -188,6 +220,39 @@
 }
 
 
+#blog .blog-content{
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:300px;
+    padding: 10px 15px;
+}
+
+#blog .blog-content .background-gradient{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .7;
+    display: block;
+    width: 100%;
+    background-color: rgba(243, 147, 48,1);
+    height: 100%;
+}
+
+#blog .blog-content h4{
+    padding: 10px 5px;
+    color:white;
+    border-left: 4px solid white;
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    z-index:10;
+    font-size:15px;
+}
+
 
 
 @media only screen and (min-width:768px){
@@ -199,6 +264,10 @@
         font-size:40px;
     }
 
+    #top #logo{
+        max-width:600px;
+    }
+
     #top #nube1,
     #top #nube2{
         max-width: 1200px;
@@ -208,5 +277,25 @@
     #top #nube4{
         top:250px !important;
     }
+
+    #body .content h4{
+        margin-top:0px;
+        text-align: left;
+    }
+    
+    #body .content p{
+        text-align: justify;
+        color: var(--bg-text-gray);
+        font-size:14px;
+        margin-top:0px;
+    }
+
+    #body .content h3,
+    #body .content h4,
+    #blog .container h3{
+        text-align:left;
+    }
+
+    
 }
 

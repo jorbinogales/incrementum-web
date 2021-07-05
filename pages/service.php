@@ -1,5 +1,5 @@
 <?php 
-    function servicePage(){
+    function servicePage($inputs){
         require 'components/homeService.php';
     ?>
         <section id="top">
@@ -17,23 +17,24 @@
             <div class="container">
                 <div class="container-fluid">
                         <div class="content">
-                            <h3>NOSOTROS</h3>
+                            <h3>SERVICIOS</h3>
                             <div class="row">
                             <?php
                                 $i = 0;
-                                foreach($services as $service){?>
-                                <div class="col-12 col-md-6 col-lg-4 m-auto">
-                                    <div class="service" 
-                                         id="service-<?php echo $i ?>" 
-                                         data-toggle="modal" 
-                                         data-target="#modal-service-<?php echo $i ?>">
-                                        <span class="icon-service">
-                                            <img src="dist/img/serviceIcon<?php echo $i+1 ?>.png" alt="">
-                                        </span>
-                                        <h4><?php echo $service['title']?></h4>
-                                        <p><?php echo $service['description'] ?></p>
-                                    </div>
-                                </div>                    
+                                foreach($services as $service){?> 
+                                    <div class="col-12 col-md-6 col-lg-4 m-auto">
+                                        <div class="service" 
+                                            id="service-<?php echo $i ?>" 
+                                            data-toggle="modal" 
+                                            data-target="#modal-service-<?php echo $i ?>">
+                                            <span class="icon-service">
+                                                <img src="dist/img/incrementum-service-serviceIcon<?php echo $i+1 ?>.png" alt="service_incrementum_advisors">
+                                            </span>
+                                            <h4><?php echo $service['title']?></h4>
+                                            <p><?php echo $service['description'] ?></p>
+                                        </div>
+                                    </div>    
+                                            
                                 <?php $i++; ?>
                             <?php } ?>
                             </div>
@@ -67,7 +68,7 @@
                                 <div class="header mt-5">
                                     <span class="line"></span>
                                     <span class="icon-service">
-                                        <img src="dist/img/serviceIcon<?php echo $i+1 ?>.png" alt="">
+                                        <img src="dist/img/incrementum-service-serviceIcon<?php echo $i+1 ?>.png" alt="service_incrementum_advisors">
                                     </span>
                                 </div>
                                 <h4><?php echo $service['title']?></h4>
@@ -90,7 +91,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <?php footerForm() ?>
+                            <?php footerForm($inputs, $i, $service['mailing']) ?>    
                             <div class="modal-footer p-0">
                                 <button type="button" class="btn btn-yellow" data-dismiss="modal">CERRAR</button>
                             </div>

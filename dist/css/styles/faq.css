@@ -1,5 +1,5 @@
 #top{
-    background-image: url('../../img/faq.png');
+    background-image: url('../../img/incrementum-advisors-faq.png');
     background-position: 100% 0%;
 }
 
@@ -10,21 +10,17 @@
     text-align:right;
     color:white;
     margin-top:220px;
-    font-size:35px;
+    font-size:22px;
     font-weight: bold;
     font-style: italic;
-}
-
-#top h3 span{
-    padding: 10px 0px;
-    border-bottom:3px solid var(--bg-yellow);
+    width: 100%;
 }
 
 
 #body{
     position:relative;
     top:-100px;
-    background-image: url('../../img/lineas.png');
+    background-image: url('../../img/incrementum-negocios-lineas.png');
     background-repeat: no-repeat;
     background-position: 50% 200%;
     background-size:cover;
@@ -57,9 +53,18 @@
     text-align:center;
 }
 
+.circle-small{
+    width: 15px !important;
+    height: 15px !important;
+}
+
 .faq{
     display: block;
     padding-left:50px;
+}
+
+.faq > .circle{
+    top:-5px;
 }
 
 
@@ -80,4 +85,24 @@
     font-size:13px;
 }
 
+.faq li{
+    font-size:13px;
+    font-family: "Rubik";
+}
 
+
+
+
+@media only screen and (min-width: 768px){
+
+    
+    #top h3 span{
+        padding: 10px 0px;
+        border-bottom:3px solid var(--bg-yellow);
+    }
+
+    #top h3{
+        font-size:35px;
+        border-bottom:0px;
+    }
+}

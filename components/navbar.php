@@ -6,8 +6,14 @@
                     <img src="dist/img/logo.png" width="100" class="d-inline-block align-top" alt="dacapri_logo">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="text-white navbar-toggler" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    <span class="icon-three-bars"></span>
                 </button>
 
 
@@ -17,6 +23,7 @@
                             <?php foreach($navs as $nav){?>
                             <li class="nav-item">
                                 <?php if($nav['page'] != 'contact'){?>
+                                
                                     <a class="nav-link text-light" href="<?php echo $nav['page']?>">
                                         <?php echo $nav['text'] ?>
                                     </a>

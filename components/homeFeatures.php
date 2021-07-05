@@ -2,7 +2,7 @@
         $features = array(
             0 => array (
                 'title' => 'SOLUCIONES INNOVADORAS',
-                'description' => 'Nuesta metodologiá está enfocada en crear soluciones alternativas a la banca
+                'description' => 'Nuestra metodología está enfocada en crear soluciones alternativas a la banca
                                     tradicional, centrándonos en las necesidades específicas de cada cliente con
                                     productos y servicios a su medida'
             ),

@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="container-fluid">
                         <div class="content">
-                            <h3>PREGUNTAS FRECUENTES</h3>
+                            <h3 class="text-center">PREGUNTAS FRECUENTES</h3>
                             <div class="row">
                                 <?php 
                                     $i = 1;
@@ -25,7 +25,7 @@
                                         ?>
                                         <div class="col-12 faq" style="position:relative;">
                                             <span class="circle"><?php echo $i ?></span>
-                                            <h4><?php echo $question['question'] ?></h4>
+                                            <p class="text-bold"><?php echo $question['question'] ?></p>
                                             <p><?php echo $question['resp'] ?></p>
                                             <ul>
                                                 <?php 
@@ -33,7 +33,7 @@
                                                         for($j=0; $j<count($question['list']); $j++){
                                                             ?>
                                                             <li class="mt-2 item-list position-relative">
-                                                                <span class="circle circle-gray"></span>
+                                                                <span class="circle circle-small"></span>
                                                                 <?php echo $question['list'][$j] ?>
                                                             </li>
                                                             <?php
